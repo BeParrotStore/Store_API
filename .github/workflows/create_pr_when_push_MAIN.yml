@@ -1,0 +1,16 @@
+name: Create PullRequest (to Main) when do push on Dev branch.
+on:
+  push:
+    branches:
+      [dev]
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2 
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "main"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
