@@ -7,6 +7,6 @@ $json_data = file_put_contents( 'request.log', $req_dump );
 print_r(' ---Finish request.--- ');
 $new_product_wh = json_decode($json_data, true);
 
-require "Controllers/ProductsController.php";
+require "../Controllers/ProductsController.php";
 $productsController=new ProductsController();
 $productsController->create($new_product_wh->name);
