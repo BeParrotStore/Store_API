@@ -1,8 +1,8 @@
 <?php
 require('../../vendor/autoload.php');
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__."/..");
 $dotenv->load();
-require "Models/Product.php";
+require "../../Models/Product.php";
 class ProductsController{
     private $productModel;
     public function __construct()

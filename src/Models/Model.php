@@ -1,13 +1,18 @@
 <?php
 
 class Model{
-    private $db_host = "212.107.17.1";
-    private $db_user = "u249698882_beparrot_dev";
-    private $db_password = "Marzo2022**";
-    private $db = "u249698882_beparrotstore";
+    private $db_host;
+    private $db_user;
+    private $db_password;
+    private $db;
     private $conex;
 
     public function __construct(){
+        $this->db_host = $_ENV["BEPPARROT_DB_HOST"];
+        $this->db_user = $_ENV["BEPPARROT_DB_USER"];
+        $this->db_password = $_ENV["BEPPARROT_DB_PASS"];
+        $this->db = $_ENV["BEPPARROT_DB_NAME"];
+        
         $this->conex = new mysqli($this->db_host, $this->db_user, $this->db_password,$this->db)
         or die(mysqli_error($this->conex));
         $this->conex->set_charset("utf8");
