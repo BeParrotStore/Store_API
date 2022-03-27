@@ -1,46 +1,82 @@
-# BeParrot: Store_API
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<p align="center">
+ <img width=817px height=100px src="https://beparrot.store/media_shared/banner.png" alt="NubezarTech_Logo_Horizontal">
+</p>
 
-## Table of Contents
+<h1 align="center" style="font-family:'Roboto';">BeParrot: Store API</h1>
+<h2 align="center" style="font-family:'Roboto'; font-style: italic;">Soluciones Informáticas NubezarTech</h2>
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
+<div align="center">
 
-## About <a name = "about"></a>
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/BeParrotStore/Store_API/pulls)
+[![Tests](https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg)](https://github.com/BeParrotStore/Store_API/actions)
 
-Write about 1-2 paragraphs describing the purpose of your project.
+</div>
 
-## Getting Started <a name = "getting_started"></a>
+---
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+<p align="center"> 🤖 Gestión unificada de las comunicaciones con clientes, usuarios y empleados.🏁
+    <br> 
+</p>
 
-### Prerequisites
+## 📝 Tabla de contenido
 
-What things you need to install the software and how to install them.
+- [Instalación](#installation)
+- [Configuración del entorno](#enviroment)
+- [Despliegue](#deployment)
+- [Author](#author)
 
+
+## 🔧 Instalación <a name = "installation"></a>
+
+Clona el repositorio en tu maquina local.
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+git clone https://github.com/nubezartech/ComunicationsService.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+Accede al directorio del proyecto.
+```
+cd ComunicationsService
+```   
+Instala las librerias y dependencias mediante composer.
+```
+composer install
+```
 
-## Usage <a name = "usage"></a>
+## ⛏️ Configura en entorno <a name = "enviroment"></a>
 
-Add notes about how to use the system.
+- <b>[ .env.example ]</b>- Archivo de variables de entorno de ejemplo.
+
+Copiar en archivo .env.example en el directorio raíz del proyecto, y renombralo a .env. 
+```
+cp .env.example .env
+```
+Configura las variables de entorno: 
+  - <b>[APP_ENV]</b>: 
+      - PRODUCTION: Para entorno de producción.
+      - DEVELOP: Para entorno de desarrollo y pruebas.  
+***
+- <b>Database configuratión:</b>
+  - [BEPPARROT_DB_HOST](#).
+  - [BEPPARROT_DB_NAME](#).
+  - [BEPPARROT_DB_USER](#).
+  - [BEPPARROT_DB_PASS](#).   
+***
+- <b>Database configuratión:</b>  
+
+  - [RABBITMQ_HOST](#).
+  - [RABBITMQ_PORT](#).
+  - [RABBITMQ_USER](#).
+  - [RABBITMQ_PASS](#).
+***
+## 🚀 Despliegue al servidor <a name = "deployment"></a>
+
+Una vez desarrolladas las features e incorporadas *(push)* a la rama **"dev"**, se creará una PullRequest a **"main"** mediante GitHub Actions. Ésta quedará pendiente de revisión y una vez aprovada se incorporara´n los cambios a la rama principal *("main")*. A su vez, se desplegará el proyecto a través de GitHub Actions y SSH en el servidor web de producción.
+
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@aabadmo4](https://github.com/aabadmo4) - <b>Adan Nahir Abad Mora</b> <br>
+<i>CEO y Digital Chief Officer en <a href="http://www.nubezar.tech">Soluciones Informáticas NubezarTech</a></i>
+
