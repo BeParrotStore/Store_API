@@ -1,4 +1,12 @@
 <?php
+/**
+* BeParrot Store -> Store_API
+*
+* @author Adan Nahir Abad Mora [Soluciones Informáticas NubezarTech]
+* @author http://www.nubezar.tech
+*
+* Gestión de pedidos
+*/
 require __DIR__."/../Models/Product.php";
 class OrdersController{
     private $orderModel;

@@ -1,5 +1,12 @@
 <?php
-
+/**
+* BeParrot Store -> Store_API
+*
+* @author Adan Nahir Abad Mora [Soluciones Informáticas NubezarTech]
+* @author http://www.nubezar.tech
+*
+* Modelo base: Persistencia de datos. Database from .env.
+*/
 class Model{
     private $db_host;
     private $db_user;
