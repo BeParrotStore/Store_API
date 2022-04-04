@@ -16,4 +16,4 @@ $new_product_wh = json_decode($req_dump);
 require "../../Controllers/ProductsController.php";
 $productsController=new ProductsController();
 //$productsController->create($new_product_wh->name,$new_product_wh->type,$new_product_wh->status);
-$productsController->create($new_product_wh);
+$productsController->update($new_product_wh);

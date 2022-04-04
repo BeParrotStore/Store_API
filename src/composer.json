@@ -1,5 +1,8 @@
 {
     "require": {
-        "vlucas/phpdotenv": "^5.4"
+        "vlucas/phpdotenv": "^5.4",
+        "twilio/sdk": "^6.36",
+        "php-amqplib/php-amqplib": "^3.2",
+        "aws/aws-sdk-php": "^3.216"
     }
 }
