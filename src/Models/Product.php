@@ -1,4 +1,12 @@
 <?php
+/**
+* BeParrot Store -> Store_API
+*
+* @author Adan Nahir Abad Mora [Soluciones Informáticas NubezarTech]
+* @author http://www.nubezar.tech
+*
+* Modelo Producto: Persistencia de datos. Database from .env.
+*/
 require "Model.php";
 class Product extends Model {
     private $table = "products";
