@@ -3,22 +3,21 @@
  <img width=817px height=100px src="https://beparrot.store/media_shared/banner.png" alt="NubezarTech_Logo_Horizontal">
 </p>
 
-<h1 align="center" style="font-family:'Roboto';">BeParrot: Store API</h1>
-<h2 align="center" style="font-family:'Roboto'; font-style: italic;">Soluciones Informáticas NubezarTech</h2>
+<h1 align="center" style="font-family:'Roboto';">BeParrot Store</h1>
+<h2 align="center" style="font-family:'Roboto'; font-style: italic;">API Store e integración con WooCommerce</h2>
 
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/BeParrotStore/Store_API/pulls)
-[![Tests](https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg)](https://github.com/BeParrotStore/Store_API/actions)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/nubezartech/nubezartech/pulls)
+[![GitHub open-pull-requests](https://badgen.net/github/open-prs/Naereen/Strapdown.js)](pulls?q=is%3Aopen)
+
+
+
+[![Tests](https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg)](https://github.com/nubezartech/nubezartech/actions)
 
 </div>
 
----
-
-<p align="center"> 🤖 Gestión unificada de las comunicaciones con clientes, usuarios y empleados.🏁
-    <br> 
-</p>
 
 ## 📝 Tabla de contenido
 
@@ -32,14 +31,14 @@
 
 Clona el repositorio en tu maquina local.
 ```
-git clone https://github.com/nubezartech/ComunicationsService.git
+git clone https://github.com/nubezartech/nubezartech.git
 ```
 
 Accede al directorio del proyecto.
 ```
-cd ComunicationsService
+cd nubezartech
 ```   
-Instala las librerias y dependencias mediante composer.
+Instala las librerias y dependencias mediante composer y npm.
 ```
 composer install
 ```
@@ -52,27 +51,11 @@ Copiar en archivo .env.example en el directorio raíz del proyecto, y renombralo
 ```
 cp .env.example .env
 ```
-Configura las variables de entorno: 
-  - <b>[APP_ENV]</b>: 
-      - PRODUCTION: Para entorno de producción.
-      - DEVELOP: Para entorno de desarrollo y pruebas.  
-***
-- <b>Database configuratión:</b>
-  - [BEPPARROT_DB_HOST](#).
-  - [BEPPARROT_DB_NAME](#).
-  - [BEPPARROT_DB_USER](#).
-  - [BEPPARROT_DB_PASS](#).   
-***
-- <b>Database configuratión:</b>  
+Configura las variables de entorno.
 
-  - [RABBITMQ_HOST](#).
-  - [RABBITMQ_PORT](#).
-  - [RABBITMQ_USER](#).
-  - [RABBITMQ_PASS](#).
-***
 ## 🚀 Despliegue al servidor <a name = "deployment"></a>
 
-Una vez desarrolladas las features e incorporadas *(push)* a la rama **"dev"**, se creará una PullRequest a **"main"** mediante GitHub Actions. Ésta quedará pendiente de revisión y una vez aprovada se incorporara´n los cambios a la rama principal *("main")*. A su vez, se desplegará el proyecto a través de GitHub Actions y SSH en el servidor web de producción.
+Una vez desarrolladas las features e incorporadas *(push)* a la rama **"dev"**, se ejecutaran los test. Si estos se ejecutan de forma correcta y no devuelven ningún errror, se creará una PullRequest a **"main"** mediante GitHub Actions. Ésta quedará pendiente de revisión y una vez aprovada se incorporarán los cambios a la rama principal *("main")*. A su vez, se desplegará el proyecto a través de GitHub Actions y SSH en el servidor web de producción.
 
 
 ## ✍️ Authors <a name = "authors"></a>

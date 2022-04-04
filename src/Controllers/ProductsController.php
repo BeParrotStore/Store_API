@@ -1,9 +1,5 @@
 <?php
-require('../../vendor/autoload.php');
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__."/..");
-$dotenv->load();
-
-require "../../Models/Product.php";
+require __DIR__."/../Models/Product.php";
 class ProductsController{
     private $productModel;
     public function __construct()
@@ -11,7 +7,13 @@ class ProductsController{
         $this->productModel=new Product();
     }
     public function create($product_data){
+        $this->productModel->insert($product_data->name, $product_data->type, $product_data->status, $product_data->id, $product_data->slug, $product_data->permalink);
+    }
+    public function update($product_data){
 
-        $this->productModel->insert($product_data->name, $product_data->type, $product_data->status);
+    }
+    public function delete($product_data){
+
+        $this->productModel->delete($product_data->id);
     }
 }

@@ -1,5 +1,9 @@
 <?php
 require('vendor/autoload.php');
+require('Controllers/MainRequestController.php');
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-echo $_ENV["BEPPARROT_DB_NAME"];
+
+$mainRequestController=new MainRequestController();
+$mainRequestController->doResource();
+
