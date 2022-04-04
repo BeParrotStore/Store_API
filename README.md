@@ -33,7 +33,7 @@ git clone https://github.com/orgs/BeParrotStore/Store_API.git
 
 Accede al directorio del proyecto.
 ```
-cd nubezartech
+cd Store_API
 ```   
 Instala las librerias y dependencias mediante composer y npm.
 ```
