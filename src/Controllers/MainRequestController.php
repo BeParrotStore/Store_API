@@ -1,7 +1,6 @@
 <?php
 require_once "Controllers/ProductsController.php";
 require_once "Controllers/TwController.php";
-require_once "Controllers/AMQController.php";
 require_once "Views/Json.php";
 
 class MainRequestController{
