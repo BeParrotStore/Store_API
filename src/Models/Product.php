@@ -2,6 +2,7 @@
 require "Model.php";
 class Product extends Model {
     private $table = "products";
+
     public function insert($product_name,$product_type,$product_status,$product_wp_id,$product_slug,$product_permalink,$product_price) {
         //params: ,$product_sku,$product_status
         $sql = "INSERT INTO $this->table (product_name,product_type,product_status,product_wp_id,product_slug,product_permalink,product_price) VALUES ('".$product_name."','".$product_type."','".$product_status."','".$product_wp_id."','".$product_slug."','".$product_permalink."','".$product_price."');";

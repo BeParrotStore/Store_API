@@ -9,7 +9,6 @@ class MainRequestController{
     {
         $this->productsController = new ProductsController();
         $this->twController = new TwController();
-        $this->amqController = new AMQController();
 
 
         if (isset($_GET["resource"]) & !empty($_GET["resource"])) {
@@ -28,8 +27,6 @@ class MainRequestController{
     {
         if ($_GET["resource"] == "products") {
             $to_print =$this->productsFunctions($_GET["action"]);
-        }elseif ($_GET["resource"] == "events") {
-            $to_print =$this->amqFunctions($_GET["action"]);
         }else {
             $to_print = array("Error" => "Resource not valid.");
         }
@@ -43,12 +40,5 @@ class MainRequestController{
             return array("Error" => "Action not valid.");
         }
     }
-    private function amqFunctions($action)
-    {
-        if ($this->action == "newEvent") {
-            return $this->amqController->publishEvent($_GET["service"],$_GET["event"],$_GET["event_data"]);
-        } else {
-            return array("Error" => "Action not valid.");
-        }
-    }
+
 }
