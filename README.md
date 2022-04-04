@@ -1,7 +1,4 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<p align="center">
- <img width=817px height=100px src="https://beparrot.store/media_shared/banner.png" alt="NubezarTech_Logo_Horizontal">
-</p>
 
 <h1 align="center" style="font-family:'Roboto';">BeParrot Store</h1>
 <h2 align="center" style="font-family:'Roboto'; font-style: italic;">API Store e integración con WooCommerce</h2>
@@ -9,12 +6,12 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/nubezartech/nubezartech/pulls)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/orgs/BeParrotStore/Store_API/pulls)
 [![GitHub open-pull-requests](https://badgen.net/github/open-prs/Naereen/Strapdown.js)](pulls?q=is%3Aopen)
 
 
 
-[![Tests](https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg)](https://github.com/nubezartech/nubezartech/actions)
+[![Tests](https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg)](https://github.com/orgs/BeParrotStore/Store_API/actions)
 
 </div>
 
@@ -31,7 +28,7 @@
 
 Clona el repositorio en tu maquina local.
 ```
-git clone https://github.com/nubezartech/nubezartech.git
+git clone https://github.com/orgs/BeParrotStore/Store_API.git
 ```
 
 Accede al directorio del proyecto.
