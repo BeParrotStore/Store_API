@@ -35,6 +35,10 @@ Accede al directorio del proyecto.
 ```
 cd Store_API
 ```   
+Accede al directorio del código.
+```
+cd src
+``` 
 Instala las librerias y dependencias mediante composer y npm.
 ```
 composer install
